@@ -1,5 +1,7 @@
 import java.util.*;
 
+// 1). find the Max flow from the given flow network using Ford-Fulkerson algorithm.
+
 class HelloWorld {
     static boolean bfs(int s,int t,int[][] G,int[] par){
         int n = G.length;

@@ -1,5 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
+
+//2). find kth ranked(kth smallest element) element in an array 
+
 int cnt = 0;
 void swap(vector<int> &arr,int p,int q){
     int temp = arr[p];

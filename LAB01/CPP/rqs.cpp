@@ -1,5 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
+
+// 1). Randomized Quick sort algorithm
+
 int cnt = 0;
 void swap(vector<int> &arr,int p,int q){
     int temp = arr[p];
