@@ -1,4 +1,6 @@
-#include<bits/stdc++.h>
+#include <iostream>
+#include <stdio.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 //2). find kth ranked(kth smallest element) element in an array 
@@ -52,7 +54,7 @@ int find(vector<int> arr,int p,int r,int k){
         return find(arr,p,q-1,k);
     }
     else{
-        return find(arr,q-1,r,k);
+        return find(arr,q+1,r,k);
     }
 }
 
@@ -66,6 +68,7 @@ int main(){
     for(int i = 0 ; i < n ; i++){
         arr[i] = i;
     }
+    shuffle(arr.begin(), arr.end(), default_random_engine(time(0)));
 
     // rqs(arr,0,n-1);
     find(arr,0,n-1,50);

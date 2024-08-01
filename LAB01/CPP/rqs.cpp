@@ -35,7 +35,7 @@ int rpartition(vector<int> &arr,int p,int r){
 }
 
 void rqs(vector<int> &arr,int p,int r){
-    if(p<q){
+    if(p<r){
         int q = rpartition(arr,p,r);
         rqs(arr,p,q-1);
         rqs(arr,q+1,r);
