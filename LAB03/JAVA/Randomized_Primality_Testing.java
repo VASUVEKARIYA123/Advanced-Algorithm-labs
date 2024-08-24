@@ -1,5 +1,5 @@
 import java.util.*;
-class HelloWorld {
+class Randomized_Primality_Testing {
     
     // 1). Randomized Primality Testing using Fermat's Theorem
     public static long GCD(long a,long b){
